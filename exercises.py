@@ -145,7 +145,12 @@ print('Exercise 7:', calculate_tip(50, 20))
 # product(2, 5, 5) should return 50.
 #
 # Define the function and call it with different sets of numbers to test.
+def product(*args):
+    result = 1
+    for num in args:
+        result *= num
 
+    return result
 
 
 print('Exercise 8:', product(2, 5, 5))
